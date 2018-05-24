@@ -112,13 +112,110 @@
             </p>
             <h4>Step 1: Github</h4>
             <div>
-                <a href="https://github.com"><img src="pics/GitHub.jpg"></a>
+                <a href="https://github.com"><img class=" img-fluid rounded mx-auto d-block" src="pics/GitHub.jpg"></a>
             </div>
             <p>
-                The first thing I need to do is set up the github repository. 
+                The first thing I need to do is set up the github repository.
+                Let me first explain why I do this and what Github is. 
+            </p>
+            <hr>
+            <p>
+                To understand Github, we have to understand what git and source control is and why
+                we use it. Computers are fragile machines. They are also very stupid. Sometimes they
+                might even make you go crazy and want to kick them in anger. Yes, that happens. Then,
+                they can also catch fire. We don't want our hard work to be lost in case anything like 
+                that happens. Also, we as humans make mistakes, big ones, or sometimes we like 
+                to try new but potentially code-breaking experiments on our code. 
+            </p>
+            <p>
+                <b>Git</b> is a source control tool. What it does is allow us to create snapshots
+                of our code as we make changes to it.Once a few snapshots have been made, or "committed", 
+                we can roll back our code to any of those snapshots with a single command. That means we
+                do not need to worry about permanently making a mess of our code, we can just roll back to
+                a state when everything was stable and fine. 
             </p>    
+            <p>Git also allows us to make multiple "branches"
+                of our code. Think of branches as separate timelines with independent snapsots in them.
+                Branches can be used to separate stable code from unstable code. Unstable code can be on
+                a saparate branch, where one can perform experiments and implement new features, while 
+                the stable code is untouched and safe in a separate branch. This makes managing large
+                code bases, like how this might become, without worrying about breaking anything.
+                <br>
+                Branches can also be merged, so that the changes made in one branch will then appear in the other.
+            </p>
+            <div class="img-fluid"><img src="pics/branching.png"></div>
+            <p>
+                Now what <b>Github</b> does is host git repositories on the web (repositories or 'repos' represent the 
+                whole code base, with all the comits and branches). Github also provides tools that allows multiple 
+                people to seamlessly work on the same repo without hicups. 
+            </p>
+            <hr>
+            <p>
+                I Already have <a href="https://github.com/AnurupDey">my Github account</a>, so I just need to 
+                create a new repository for our new project. To do this , on the github dashboard, I hit the 
+                "New Repository" button.
+            </p>
+            <img class="img-fluid rounded mx-auto d-block" src="pics/screenshots/d00-github-new-repo-button.PNG">
+            <p>
+                This takes me to the "Create a New Repository Page", where I fill in the details and press "Create Repository".
+            </p>
+            <img class="img-fluid rounded mx-auto d-block" src="pics/screenshots/d00-github-create-new-repo.PNG">
+            <p>
+                Yes, I named it NOK-Engine. No particular reason to call it that. I might even change the name.
+                It is a public repository, so anybody who has access to Github can view all the source code I write.
+                I also initialized the repository with a readme and the GNU General Public License. This License
+                basically allows anybody to use the source code in thier own projects, all or just a part of it,
+                but with the condition that the person doing so must also release the source code of the project they 
+                use this source code in, for free. Also, it has a clause that says that I am not responsible 
+                for any harm done as a result of the use of my code on someone else's machine. 
+                So, in case you plan on deriving anything from this project, keep in mind that you are free to take 
+                everything from here.
+            </p>
+            <p>
+                The GNU GPL license I just included requires me to do a few things for it to be active. 
+                <ul>
+                    <li>
+                        It requires that I include the full license document with the source code <i>and</i> 
+                        the final product.   
+                    </li>
+                    <li>
+                        It requires that I include a small notice on the top of each source file I create that 
+                        looks like this: <br><br>
+                        <code>
+                                &lt;one line to give the program's name and a brief idea of what it does.&gt;<br>
+                                Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+                                <br><br>
+                                This program is free software: you can redistribute it and/or modify
+                                it under the terms of the GNU General Public License as published by
+                                the Free Software Foundation, either version 3 of the License, or
+                                (at your option) any later version.
+                                <br><br>                            
+                                This program is distributed in the hope that it will be useful,
+                                but WITHOUT ANY WARRANTY; without even the implied warranty of
+                                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                                GNU General Public License for more details.
+                                <br><br>
+                                You should have received a copy of the GNU General Public License
+                                along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+                                <br><br>
+                        </code>
+                    </li>
+                    <li>
+                        Provide a way to access this license from withing the finished product, which means from 
+                        within the simulation, probably on some menu or something. 
+                    </li>
+                </ul> 
+                All that is fine by me. Its not too much to do.
+            </p>
+            <p>
+                So, after Github creates the repository for us, with the LICENSE.txt and a README.md files, we can 
+                start to add things to it. The repository can be viewed at 
+                <a href="https://github.com/AnurupDey/NOK-Engine">
+                    https://github.com/AnurupDey/NOK-Engine
+                </a>. 
+            </p>
+            <img class="img-fluid rounded mx-auto d-block" src="pics/screenshots/d00-github-repo.PNG">
         </article>
-        
     </div>
 
     <!-- Optional JavaScript -->
