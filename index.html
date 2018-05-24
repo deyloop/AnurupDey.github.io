@@ -1,55 +1,130 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Home-Page</title>
-    <link rel='stylesheet' href='style.css'>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+        article{
+            padding: 30px;
+            border-radius: 15px;
+            border-color: blue;
+            margin-top: 30px;
+        }
+
+        p{
+            text-indent: 20px;
+        }
+
+        p a img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <title>Anurup Dey | Home</title>
   </head>
   <body>
-    <div id='container'>
-      <div id='header'>
-        <h1>Anurup Dey's Website</h1>
-      </div>
-      <div id='nav'>
-        <ul>
-          <li><a href='index.html' class='active'>Home</a></li>
-          <li><a href='about.html'>About</a></li>
-          <li><a href='services.html'>Services</a></li>
-          <li><a href='contact.html'>Contact</a></li>
-        </ul>
-      </div>
-      <div id="main">
-        <h2>Welcome</h2>
-        <p>This site is under construction.</p>
-        <p>
-          ed ut perspiciatis unde omnis iste natus error sit 
-          voluptatem accusantium doloremque laudantium, totam 
-          rem aperiam, eaque ipsa quae ab illo inventore 
-          veritatis et quasi architecto beatae vitae dicta 
-          sunt explicabo. Nemo enim ipsam voluptatem quia 
-          voluptas sit aspernatur aut odit aut fugit, sed 
-          quia consequuntur magni dolores eos qui ratione 
-          voluptatem sequi nesciunt. Neque porro quisquam est, 
-          qui dolorem ipsum quia dolor sit amet, consectetur, 
-          adipisci velit, sed quia non numquam eius modi tempora 
-          incidunt ut labore et dolore magnam aliquam quaerat 
-          voluptatem. Ut enim ad minima veniam, quis nostrum 
-          exercitationem ullam corporis suscipit laboriosam, 
-          nisi ut aliquid ex ea commodi consequatur? Quis autem
-          vel eum iure reprehenderit qui in ea voluptate velit 
-          esse quam nihil molestiae consequatur, vel illum qui 
-          dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>
-      </div>
-      <div id='sidebar'>
-        <h3>Sidebar</h3>
-        <p>Side Bar Text is going to be here.</p>
-      </div>
-      
-      <div class='clr'></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Anurup Dey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div id='footer'>
-        <p>Copyright &copy; Anurup Dey 2018</p>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                -->
+                </ul>
+                <!--
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                -->
+              </div>
+            </nav>
+    </nav>
+    <br><br><br>
+    
+    <div class="container">
+        <article class="shadow border">
+            <h2>3D Simulation from Scratch - Day 00 - <h3>Setting Everything Up</h3> </h2>
+            <p>
+                I am about to make a simulation. Now, why make a simulation exactly,
+                and what are we going to simulate? <br>
+                Well, the origional plan was to create a simulation of the <b>universe</b>, but lets
+                see how far I can take it. We might at least make a realistic version of minecraft,
+                where blocks don't float in the middle of the sky when blocks bellow them are removed.
+            </p>
+            <p>
+                Really, there is no other reason for starting this project than to see how far I can 
+                streatch a simulation. I have always wanted to do this, and also have tried to do it 
+                a couple times in the past, so I do have some idea of what needs to be done.
+            </p>
+            <p>
+                I am going to document each and every step of the process, so if somebody reading this
+                wants to follow along, they can, but it is not meant to be followed along. If you follow 
+                this as a tutorial, you will end up going through the same mistakes and potentially
+                unneccessary steps that can be avoided that I go through, since I am not a professional 
+                and will be learning, potentially from mistakes, as I go along. Either way, I thought it
+                would be benefitial if I document the whole process.   
+            </p>
+            <p>
+                Now, the process I will be using is definitely not the easiest way one might go about 
+                making a 3D simulation of any sort - in fact, it is deleberately the hardest. There are 
+                simpler and quicker ways to do what I want to do, but these other much simpler 
+                techniques make things simpler by hiding away the complexities so yo do not have
+                to deal with them yourself. I want to know what these complexities are and learn how to
+                handle them. My primary objective is to learn from this project as much as possible.
+                That is why I choose to write every part of the simulation myself, using no external
+                libraries or pre-built tools designed to help make things easier to make simulations 
+                - none of that.  
+            </p>
+            <p>
+                Today I will go through the steps needed to set up everything before I actually jump 
+                in and write the code. This does not include planing and deciding on the architecture,
+                but things such as setting up the developement environment, getting all the tools ready
+                and so on. Here we go!
+            </p>
+            <h4>Step 1: Github</h4>
+            <div>
+                <a href="https://github.com"><img src="pics/GitHub.jpg"></a>
+            </div>
+            <p>
+                The first thing I need to do is set up the github repository. 
+            </p>    
+        </article>
+        
     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
