@@ -14,16 +14,6 @@
             border-color: blue;
             margin-top: 30px;
         }
-
-        p{
-            text-indent: 20px;
-        }
-
-        p a img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
     </style>
     <title>Anurup Dey | Home</title>
   </head>
@@ -214,7 +204,81 @@
                     https://github.com/AnurupDey/NOK-Engine
                 </a>. 
             </p>
-            <img class="img-fluid rounded mx-auto d-block" src="pics/screenshots/d00-github-repo.PNG">
+            <img class="img-fluid rounded mx-auto d-block border" src="pics/screenshots/d00-github-repo.PNG">
+            Now  For the next step.
+            <br>
+            <hr>
+            <h4>Step 2: Visual Studio</h4>
+            <p>
+                I will be using Visual Studio Comunity for the Windows build. It is, in my openion, the best IDE one 
+                could ask for. Too bad it is only available for Windows and it is made by Microsoft. Anyways.
+            </p>
+            <p>
+                Now, I want to set up Visual Studio in a way that it makes it easy to do git commits. In a way I want
+                it to be easy to sync with the online Github repo. Also, the default directory structure that VS 
+                starts a project with is not ideal for what I want to do. So I will change that. 
+            </p>
+            <p>
+                On starting VS up, I have the option to create a new "Solution" from an existing repo. I have the 
+                <a href="https://visualstudio.github.com/">Github Extension for Visual Studio</a> installed. Thus on my
+                startup screen, I have the option to open a Github Repo directly.
+            </p>
+            <img class="img-fluid mx-auto d-block" src="pics/screenshots/d00-vs-github-repo.PNG">
+            <p>
+                This prompts me to enter my Github credentials and then asks me which repo I want to "clone", and where
+                I want to clone it to.
+            </p>
+            <img src="pics/screenshots/d00-vs-choose-repo.PNG" class="img-fluid mx-auto d-block">
+            <p>
+                After selecting NOK-Engine and specifying my Projects folder, VS automatically clones the github repo 
+                to my computer. VS cannot yet work properly with this project yet, since the repo contains no 
+                "Solutions".
+            </p>
+            <p>
+                I hit File &gt; New &gt; Project, which brings up the New Project wizard.
+            </p>
+            <img src="pics/screenshots/d00-vs-create-solution.PNG" class="img-fluid mx-auto d-block">
+            <p>
+                I chose the 'Empty Project' template, Naming the project NOK Engine. For the Location
+                field, I entered the folder the which the Github repo was cloned to, and unchecked the 
+                'Create Directory for Solution' checkbox. This would ensure that the VS uses the 
+                same directory that was cloned from Github. 
+            </p>
+            <p>
+                With That done, I can now go and add a new file to the repo. Just to test things out, I 
+                try out making a Hello World application...
+            </p>
+            <p>
+                On the left side of the VS window is a tab/pane called the solution explorer. If the Solution Explorer 
+                is not visible for some reason, it can be made visible by pressing CTRL+ALT+L, or by going to 
+                View &gt; Solution Explorer. 
+            </p>
+            <img src="pics/screenshots/d00-vs-sol-explr.PNG" class="img-fluid mx-auto d-block">
+            <p>
+                These yellow folder-like things are actually not real folders. These are called 
+                'filters', and are a way of organising files within a project in Visual Studio.
+            </p>
+            <p>
+                Now, a new source file can be added by right-clicking the filter in which the new 
+                file has to be added, in our case the 'Source' filter, and selecting 
+                <code>Add &gt; Add New Item...</code>, which will make a <code>New File</code> 
+                dialog box appear. I selected  'C++ Source (.cpp)' to add my source file. I renamed
+                the newly added source file to source.cpp. This file is temporary, I will remove it
+                soon. 
+            </p>
+            <p>
+                Now Let's create a 'Hello World' program to test things out, and then I will push 
+                that new file to github for everyone to see. The code in source.cpp would be:
+            </p>
+            <script src="https://gist.github.com/AnurupDey/4a56b2f627da19f41a630c8100cc31a7.js"></script>
+            <p>
+                Now to build the project and run this project with the debugger, click the 
+                <img src="pics/screenshots/d00-vs-debug.PNG"> button. A console window with the expected 
+                greeting appears.
+            </p>
+            <p>
+                
+            </p>
         </article>
     </div>
 
