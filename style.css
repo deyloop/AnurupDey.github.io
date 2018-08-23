@@ -1,6 +1,11 @@
+body,html{
+    height: 100%;
+}
+
 body{
     margin-top: 60px;
 }
+
 #container{
     display:flex;
     flex-wrap: wrap;
@@ -16,6 +21,29 @@ body{
     height: 60px;
     box-shadow: 0 10px 8px grey;
     background: rgba(0,0,0,0.7);
+}
+
+.paralax-welcome{
+    background-image: url("images/home-welcome.jpg");
+    height:100%;
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#welcome-jumbotron{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
 .card{
