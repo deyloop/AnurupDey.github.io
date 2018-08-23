@@ -7,10 +7,10 @@
 }
 
 #header{
-    background:black;
+    background:grey;
     width:100%;
     height:950px;
-    text-align: centre;
+    text-align: center;
     padding-top:460px;
 }
 
@@ -42,12 +42,19 @@
 
 .nav-button{
     width:100%;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 50px;
     height: 50px;
     background: orange;
     box-shadow: 0px 0px 8px grey;
     margin-left: -5px;
     margin-top:10px;
     transition: height 0.5s, width 0.5s, margin 1.5s;
+}
+
+#sidebar a{
+    text-decoration: none;
 }
 
 #container{
@@ -74,6 +81,6 @@
 }
 
 .sidebar-extended div.child-expand div.nav-button, #sidebar:hover.sidebar-aside div.child-expand div.nav-button{
-    height:100px;
+    height:60px;
     margin-top: 30px;
 }
