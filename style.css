@@ -7,9 +7,11 @@
 }
 
 #header{
-    background-color:black;
+    background:black;
     width:100%;
-    height:100%;
+    height:950px;
+    text-align: centre;
+    padding-top:460px;
 }
 
 #sidebar{
