@@ -1,0 +1,71 @@
+.sidebar-extended{
+    width:30%;
+}
+
+.sidebar-aside{
+    width:50px;
+}
+
+#sidebar{
+    height:100%;
+    top:0;
+    left:0;
+    background: #2e1f1f;
+    box-shadow: 5px 0px 8px grey;
+    position: fixed;
+    transition: width 0.5s;
+    color: white;
+    text-align: centre;
+}
+
+#sidebar:hover{
+    width:40%;
+}
+
+.nav-button:hover{
+    width: 110%;
+    border: 2px yellow solid;
+    box-shadow: 0px 0px 8px yellow;
+}
+
+.nav-button:active{
+    height: 500px;
+}
+
+.nav-button{
+    width:100%;
+    height: 50px;
+    background: orange;
+    box-shadow: 0px 0px 8px grey;
+    margin-left: -5px;
+    margin-top:10px;
+    transition: height 0.5s, width 0.5s, margin 1.5s;
+}
+
+#container{
+    margin: 20px auto;
+    width:800px;
+    height: 12000px;
+    box-shadow: 5px 5px 8px grey;
+    border-radius: 5px;
+}
+
+.hor-mid{
+    position:absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    transition: width 0.5s;
+}
+
+.sidebar-aside div.child-expand{
+    width:120%;
+}
+
+.sidebar-extended div.child-expand, #sidebar:hover.sidebar-aside div.child-expand{
+    width:90%;
+}
+
+.sidebar-extended div.child-expand div.nav-button, #sidebar:hover.sidebar-aside div.child-expand div.nav-button{
+    height:100px;
+    margin-top: 30px;
+}
