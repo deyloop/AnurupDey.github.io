@@ -51,6 +51,16 @@ article{
     letter-spacing: 10px;
 }
 
+#intro{
+    width:100%;
+    background: black;
+    color:white;
+    border-radius: 0 0 20px 20px;
+    height: 200px;
+    text-align: justify;
+    padding: 100px;
+}
+
 .card{
     width:400px;
     height: 300px;
