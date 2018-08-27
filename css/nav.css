@@ -4,25 +4,23 @@
     top:0;
     left:0;
     width: 100%;
-    height: 60px;
     box-shadow: 0 10px 8px rgba(0,0,0,0.5);
     background: rgba(0,0,0,0.7);
     z-index: 99999;
+    overflow: auto;
 }
 
 #nav #LOGO{
     float: left;
-    margin: 10px;
     color: white;
     font-size: 25px;
-    height: 50px;
     padding: 5px;
+    margin: 5px;
 }
 
 #nav .home-links{
     float:left;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 #nav ul{
@@ -39,7 +37,8 @@
     text-decoration: none;
     color: white;
     padding: 10px;
-    background: rgba(68, 64, 64, 0.719);
+    margin: 5px;
+    background: rgba(22, 21, 21, 0.719);
     border-radius: 10px;
     transition: background 0.5s, color 0.5s;
 }
@@ -50,12 +49,13 @@
 }
 
 #nav .topic-links{
+    text-align: center;
     float:right;
-    margin-right: 50px;
-    margin-top: 20px;
+    margin-right: 50%;
+    margin: 20px;
 }
 
-#nav ul li a .activel{
+#nav ul li a .active-l{
     color: black;
     background: #7e7171a4;
 }
