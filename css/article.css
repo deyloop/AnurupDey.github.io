@@ -31,7 +31,7 @@ article{
     padding: 10px;
 }
 
-pre{
+pre, xmp{
     border:1px solid rgb(96, 206, 233);  
     border-radius: 15px;
     padding: 10px;
