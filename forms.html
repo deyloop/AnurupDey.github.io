@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css"
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/article.css">
 </head>
+
 <body>
     <header>
         <div id="nav">
@@ -16,31 +19,600 @@
             </span>
             <span class="home-links">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
                 </ul>
             </span>
             <span class="topic-links">
                 <ul>
-                    <li><a href="text-format.html">Basic Formatting</a></li>
-                    <li><a href="links.html">Links</a></li>
-                    <li><a href="images.html">Images</a></li>
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="lists.html">Lists</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="frames.html">Frames</a></li>
-                    <li><a href="forms.html">Forms</a></li>
+                    <li>
+                        <a href="text-format.html">Basic Formatting</a>
+                    </li>
+                    <li>
+                        <a href="links.html">Links</a>
+                    </li>
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">Tables</a>
+                    </li>
+                    <li>
+                        <a href="lists.html">Lists</a>
+                    </li>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="frames.html">Frames</a>
+                    </li>
+                    <li>
+                        <a href="forms.html">Forms</a>
+                    </li>
                 </ul>
             </span>
         </div>
     </header>
-    
-    <article>
 
+    <article>
+        <div id="cover">
+            <h1>FORMS</h1>
+        </div>
+        <div id="content">
+            <h1 align="center">HTML FORMS</h1>
+            <p>
+                HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration
+                you would like to collect information such as name, email address, credit card, etc.
+                <br> A form will take input from the site visitor and then will post it to a back-end application such as CGI,
+                ASP Script or PHP script etc. The back-end application will perform required processing on the passed data
+                based on defined business logic inside the application.
+                <br> There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons,
+                checkboxes, etc.
+                <br> The HTML &lt;form&gt; tag is used to create an HTML form and it has following syntax :−
+                <br> &lt;form action = "Script URL" method = "GET|POST"&gt;
+                <br> form elements like input, textarea etc.
+                <br> &lt;form&gt;
+                <br>
+                <br>
+            </p>
+            <h1>FORM ATTRIBUTES</h1>
+            <p>Apart from common attributes, following is a list of the most frequently used form attributes :−
+                <br>
+                <table width="50%">
+                    <th>Sr.NO</th>
+                    <th>Attribute & Description</th>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <b>Action :</b>
+                            <br> Backend script ready to process your passed data.
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <b>method :</b>
+                            <br> Method to be used to upload data. The most frequently used are
+                            <br> GET and POST methods.
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <b>target:</b>
+                            <br>Specify the target window or frame where the result of the
+                            <br> script will be displayed. It takes values like _blank, _self,
+                            <br>_parent etc
+                    </tr>
+                </table>
+                <br>
+                <h1>Form Controls</h1>
+                <p>
+                    There are different types of form controls that you can use to collect data using HTML form :−
+                    <br> • Text Input Controls
+                    <br> • Checkboxes Controls
+                    <br> • Radio Box Controls
+                    <br> • Select Box Controls
+                    <br> • File Select boxes
+                    <br> • Hidden Controls
+                    <br> • Clickable Buttons
+                    <br> • Submit and Reset Button
+                    <br>
+                </p>
+                <br>
+                <br>
+                <h1>Text Input Controls</h1>
+                <p>
+                    There are three types of text input used on forms :−
+                    <br> • Single-line text input controls − This control is used for items that require only one line of user
+                    input, such as search boxes or names. They are created using HTML "input" tag.
+                    <br> • Password input controls − This is also a single-line text input but it masks the character as soon
+                    as a user enters it. They are also created using HTMl "input" tag.
+                    <br> • Multi-line text input controls − This is used when the user is required to give details that may be
+                    longer than a single sentence. Multi-line input controls are created using HTML "textarea" tag.
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Single-Line Text Input Control</h1>
+                    This control is used for items that require only one line of user input, such as search boxes or names. They are created
+                    using HTML "input" tag.
+                    <br>
+                    <br>
+
+                    <h1>Example</h1>
+
+                    Here is a basic example of a single-line text input used to take first name and last name −:
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Text Input Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form &gt;
+            First name: &lt;input type = "text" name = "first_name" /&gt;
+            &lt;br&gt;
+            Last name: &lt;input type = "text" name = "last_name" /&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                </pre>
+                </p>
+                <br>
+                <h1>Attributes</h1>
+                <table width="50%">
+                    <th>Sr.NO</th>
+                    <th>Attribute & Description</th>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <b>type :</b>
+                            <br> Indicates the type of input control and for text input control
+                            <br> it will be set to text.
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <b>name :</b>
+                            <br> Used to give a name to the control which is sent to the server
+                            <br> to be recognized and get the value.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <b>value:</b>
+                            <br> This can be used to provide an initial value inside the control.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <b>size :</b>
+                            <br>Allows to specify the width of the text-input control in terms
+                            <br> of characters.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <b>maxlength :</b>
+                            <br>Allows to specify the maximum number of characters a user can
+                            <br>enter into the text box.
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <h1>Password Input Controls</h1>
+                <p>
+                    This is also a single-line text input but it masks the character as
+                    <br>soon as a user enters it. They are also created using HTML &lt;input&gt; tag
+                    <br>but type attribute is set to password.
+                </p>
+                <h1>Example</h1>
+                <p>
+                    Here is a basic example of a single-line password input used to take user password :-
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    &lt;title&gt;Password Input Control&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;form &gt;
+        USER ID: &lt;input type = "text" name = "user_id" /&gt;
+        &lt;br&gt;
+        Password: &lt;input type = "password" name = "password" /&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;html&gt;
+                    </pre>
+                </p>
+                <br>
+                <h1>Multiple-Line Text Input Controls</h1>
+                <p>
+                    This is used when the user is required to give details that may be
+                    <br> longer than a single sentence. Multi-line input controls are created
+                    <br>using HTML &lt;textarea&gt; tag.
+                </p>
+                <h1>Example</h1>
+                <p>
+                    Here is a basic example of a multi-line text input used to take item description:-
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Multiple-Line Input Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;form &gt;
+            Description : &lt;br&gt;
+            &lt;textarea rows = "5" cols="50" name="description"&gt;
+                Enter description here...
+            &lt;/textarea&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                    </pre>
+                </p>
+                <br>
+                <h1>ATTRIBUTES</h1>
+                <p>Following is the list of attributes for &lt;textarea&gt; tag.
+                    <br>
+                    <table width="50%">
+                        <th>Sr.NO</th>
+                        <th>Attribute & Description</th>
+
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <b>name :</b>
+                                <br> Used to give a name to the control which is sent to the server
+                                <br> to be recognized and get the value.
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <b>rows :</b>
+                                <br> Indicates the number of rows of text area box.
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <b>cols :</b>
+                                <br>Indicates the number of columns of text area box.
+                        </tr>
+                    </table>
+                    <br>
+                    <h1>Checkbox Control</h1>
+                    <p>
+                        Checkboxes are used when more than one option is required to be selected.
+                        <br> They are also created using HTML &lt;input&gt; tag but type
+                        <br> attribute is set to checkbox..
+                        <h1>Example </h1>
+                        <p>Here is an example HTML code for a form with two checkboxes :−
+                            <br>
+                        </p>
+                        <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Checkbox Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;form &gt;
+            &lt;input type = "checkbox" name = "maths" value="on"&gt;Maths
+            &lt;br&gt;
+            &lt;input type = "checkbox" name = "physics" value="on" &gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                            </pre>
+                    </p>
+                    <br>
+                    <h1>Attributes</h1>
+                    <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+                    <table>
+                        <th>Sr.NO</th>
+                        <th>Attribute & Description</th>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <b>type :</b>
+                                <br> Indicates the type of input control and for checkbox input control
+                                <br> it will be set to checkbox.
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <b>name :</b>
+                                <br> Used to give a name to the control which is sent to the server
+                                <br> to be recognized and get the value.
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <b>value:</b>
+                                <br> The value that will be used if the checkbox is selected.
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <b>checked :</b>
+                                <br>Set to checked if you want to select it by default.
+                        </tr>
+                    </table>
+                    <br>
+
+                    <h1>Radio Button Control</h1>
+                    <p>
+                        Radio buttons are used when out of many options, just one option is
+                        <br>required to be selected. They are also created using HTML &lt;input&gt; tag
+                        <br>but type attribute is set to
+                        <b>radio</b>.
+                        <br>
+                        <h1>Example </h1>
+                        <p>Here is an example HTML code for a form with two radio buttons :−
+                            <br>
+                        </p>
+                        <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Radio Box Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;form &gt;
+            &lt;input type = "radio" name = "subject" value="maths"&gt;Maths
+            &lt;br&gt;
+            &lt;input type = "radio" name = "subject" value="physics"&gt;Physics
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                        </pre>
+                    </p>
+                    <br>
+                    <h1>Attributes</h1>
+                    <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+                    <table>
+                        <th>Sr.NO</th>
+                        <th>Attribute & Description</th>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <b>type :</b>
+                                <br> Indicates the type of input control and for checkbox input control
+                                <br> it will be set to radio.
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <b>name :</b>
+                                <br> Used to give a name to the control which is sent to the server
+                                <br> to be recognized and get the value.
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <b>value:</b>
+                                <br> The value that will be used if the radio box is selected.
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <b>checked :</b>
+                                <br>Set to checked if you want to select it by default.
+                        </tr>
+                    </table>
+                    <br>
+
+
+                    <h1>Select Box Control</h1>
+                    <p>
+                        A select box, also called drop down box which provides option to list
+                        <br>down various options in the form of drop down list, from where a user
+                        <br> can select one or more options.
+                        <h1>Example </h1>
+                        <p>Here is an example HTML code for a form with one drop down box :−
+                            <br>
+                        </p>
+                        <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Radio Box Control&lt;/title&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+
+    &lt;form &gt;
+        &lt;select name="dropdown"&gt; 
+            &lt;option value = "maths" selected&gt;Maths&lt;/option&gt; 
+            &lt;option value = "physics"&gt;Physics &lt;/option&gt; 
+        &lt;/form&gt;
+    <br> &lt;/body&gt;
+&lt;html&gt;
+                            </pre>
+                    </p>
+                    <br>
+                    <h1>Attributes</h1>
+                    <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+                    <table>
+                        <th>Sr.NO</th>
+                        <th>Attribute & Description</th>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <b>name :</b>
+                                <br> Used to give a name to the control which is sent to the server
+                                <br> to be recognized and get the value.
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <b>size :</b>
+                                <br> The value that will be used to present a scrolling list box.
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <b>multiple :</b>
+                                <br>If set to "multiple" then allows a user to select multiple items from the menu.
+                        </tr>
+                    </table>
+                    <br>
+
+                    <h1>Button Controls</h1>
+                    <p>
+                        There are various ways in HTML to create clickable buttons. You can
+                        <br> also create a clickable button using &lt;input&gt;tag by setting its type
+                        <br> attribute to button. The type attribute can take the following values :−
+                        <br>
+                    </p>
+                    <h1>Example </h1>
+                    <p>Here is an example HTML code for a form with two radio buttons :−
+                        <br>
+                    </p>
+                    <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Radio Box Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;form &gt;
+            &lt;input type = "submit" name = "submit" value="Submit"/&gt;
+            &lt;br&gt;
+            &lt;input type = "reset" name = "reset" value="Reset"/&gt;
+            &lt;input type = "button" name = "ok" value="OK"/&gt;
+            &lt;br&gt;
+            &lt;input type = "image" name = "imagebutton" src="/html/images/logo.png"/&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                        
+                        </pre>
+                </p>
+                <br>
+                <h1>Attributes</h1>
+                <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+                <table>
+                    <th>Sr.NO</th>
+                    <th>Attribute & Description</th>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <b>submit :</b>
+                            <br> his creates a button that automatically submits a form.
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <b>reset :</b>
+                            <br> This creates a button that automatically resets form controls
+                            <br>to their initial values.
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <b>button:</b>
+                            <br> This creates a button that is used to trigger a client-side script
+                            <br> when the user clicks that button.
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <b>image :</b>
+                            <br>This creates a clickable button but we can use an image as
+                            <br> background of the button.
+                    </tr>
+                </table>
+                <br>
+                <h1>Fieldsets</h1>
+                <p>
+                    Fieldsets are used to group related elements in a form. They help in
+                    <br>organising and segregating the forms, so that they look better and
+                    <br>are easier to navigate through. The form elements that must be
+                    <br>grouped together should be enclosed within &lt;fieldset&gt; tags.
+                    <br> Following are the attributes of the &lt;fieldset&gt; tag.</p>
+                <h1>Example </h1>
+                <p>Here is an example HTML code for a form with two radio buttons :−
+                    <br>
+                </p>
+                <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;title&gt;Radio Box Control&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;form &gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Personalia:&lt;/legend&gt;
+                Name: &lt;input&gt;type="text"&gt;
+                Email: &lt;input type="text" size="30">
+                Date of birth: &lt;input type="text" size="10"&gt;
+            &lt;/fieldset&gt;
+        &lt;/form &gt;
+    &lt;/body&gt;
+&lt;html&gt;
+                    </pre>
+                <h1>Legend for Fieldsets</h1>
+                <p>The &lt;legend&gt; tag defines caption for the &lt;fieldset&gt; element.</p>
+                <br>
+                <h1>Example</h1>
+                <pre>
+&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personalia:&lt;/legend&gt;
+        Name: &lt;input type="text" size="30"&gt;
+        Email: &lt;input type="text" size="30"&gt;
+        Date of birth: &lt;input type="text" size="10"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                    </pre>
+                <h1>Attributes</h1>
+                <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+                <table width="50%">
+                    <th>Sr.NO</th>
+                    <th>Attribute & Description</th>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <b>disabled :</b>
+                            <br>This specifies that a group of related form elements should be disabled.
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <b>form :</b>
+                            <br> This specifies one or more forms the fieldset belongs to. Must
+                            <br> be an id of an existing form.
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <b>name:</b>
+                            <br>Specifies the name of the fieldset.
+                    </tr>
+
+                </table>
+                <br>
+        </div>
     </article>
 
     <footer>
 
     </footer>
 </body>
+
 </html>
