@@ -1,0 +1,22 @@
+.face{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    background: yellow;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.profile-male{
+    background-image: url("../images/profile-male.jpg");
+}
+
+.profile-female{
+    background-image: url("../images/profile-female.jpg");
+}
+
+p{
+    font-size: 12px;
+    color: #474545;
+    font-weight: bold;
+}
