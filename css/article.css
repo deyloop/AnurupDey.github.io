@@ -68,3 +68,10 @@ img{
     width: 750px;
     background-attachment: fixed;
 }
+
+iframe{
+    width:100%;
+    border: 2px dotted grey;
+    border-radius: 15px;
+    height: 300px;
+}
