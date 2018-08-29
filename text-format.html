@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <title>HTML Tutorial</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/article.css">
 </head>
+
 <body>
     <header>
         <div id="nav">
@@ -16,31 +19,315 @@
             </span>
             <span class="home-links">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
                 </ul>
             </span>
             <span class="topic-links">
                 <ul>
-                    <li><a href="text-format.html">Basic Formatting</a></li>
-                    <li><a href="links.html">Links</a></li>
-                    <li><a href="images.html">Images</a></li>
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="lists.html">Lists</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="frames.html">Frames</a></li>
-                    <li><a href="forms.html">Forms</a></li>
+                    <li>
+                        <a href="text-format.html">Basic Formatting</a>
+                    </li>
+                    <li>
+                        <a href="links.html">Links</a>
+                    </li>
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">Tables</a>
+                    </li>
+                    <li>
+                        <a href="lists.html">Lists</a>
+                    </li>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="frames.html">Frames</a>
+                    </li>
+                    <li>
+                        <a href="forms.html">Forms</a>
+                    </li>
                 </ul>
             </span>
         </div>
     </header>
-    
-    <article>
 
+    <article>
+        <div id="cover">
+            <h1>HTML FORMATTING TAGS</h1>
+        </div>
+        <div id="content">
+            <p>
+                HTML Formatting Elements HTML defines special elements for defining text with a special meaning. HTML uses elements like
+                &ltb&gt and &lti&gt for formatting output, like bold or italic text. Formatting elements were designed to
+                display special types of text. some of them are as follows:
+
+
+                <h2>&ltb&gt AND &lti&gt TAG - BOLD AND ITALIC TEXT</h2>
+                <p>
+                    <u>Ex:</u>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>
+        This is normal text
+        <b>This text is bold</b>
+        <br>
+        <i>This text is italic</i>
+        <br>
+    </p>
+</body>
+</html>
+                    </xmp>
+                    <p>
+                        <u>Display:</u>
+                        <p>
+                            <!DOCTYPE html>
+                            <html>
+
+                            <body>
+                                <p>
+                                    This text is normal.
+                                    <br>
+                                    <b>This text is bold</b>
+                                    <br>
+                                    <i>This text is italic</i>
+                                    <br>
+
+                                </p>
+                            </body>
+
+                            </html>
+                            <br>
+
+
+                            <h2>&ltstrong&gt TAG - DEFINES IMPORTANT TEXT</h2>
+                            <p>
+                                It is a phrase tag.
+                                <br>
+                                <p>
+                                    <u>Ex:</u>
+                                    <br>
+                                    <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>
+        This text is normal.
+        <br>
+        <strong>This text is important.</strong>
+</body>
+</html>
+                                    </xmp>
+                                    <br>
+
+                                    <u>Display:</u>
+                                    <br>
+
+                                    <!DOCTYPE html>
+                                    <html>
+
+                                    <body>
+                                        This text is normal.
+                                        <br>
+                                        <strong>This text is important.</strong>
+
+                                    </body>
+
+                                    </html>
+                                    <br>
+
+
+                                    <h2>&lt;em&gt; TAG - RENDERS AS EMPHASIZED TEXT</h2>
+                                    <p>
+                                        <u>Ex:</u>
+                                        <br>
+                                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>This text is normal.</p>
+    <p>
+        <em>This text is emphasized.</em>
+    </p>
+</body>
+</html>
+                                        </xmp>
+                                        <br>
+
+                                        <u>Display:</u>
+                                        <br>
+                                        <!DOCTYPE html>
+                                        <html>
+
+                                        <body>
+                                            <p>This text is normal.</p>
+                                            <p>
+                                                <em>This text is emphasized.</em>
+                                            </p>
+                                        </body>
+
+                                        </html>
+
+
+                                        <h2>&lt;small&gt; TAG - DEFINES SMALLER TEXT</h2>
+                                        <p>
+                                            <u>Ex:</u>
+                                            <br>
+                                            <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    HTML
+    <small>Small</small> Formatting.
+</body>
+</html>
+                                            </xmp>
+                                            <br>
+
+                                            <u>Display:</u>
+                                            <br>
+                                            <!DOCTYPE html>
+                                            <html>
+
+                                            <body>
+                                                <h2>HTML
+                                                    <small>Small</small> Formatting</h2>
+                                            </body>
+
+                                            </html>
+
+
+                                            <h2>&ltmark&gt TAG - DEFINES HIGHLIGHTED TEXT</h2>
+                                            <P>
+                                                <u>Ex:</u>
+                                                <br>
+                                                <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>HTML
+        <mark>Marked</mark> Formatting</h2>
+</body>
+</html>
+                                                </xmp>
+                                                <br>
+
+                                                <u>Display:</u>
+                                                <br>
+                                                <!DOCTYPE html>
+                                                <html>
+
+                                                <body>
+                                                    HTML
+                                                    <mark>Marked</mark> Formatting.
+                                                </body>
+
+                                                </html>
+                                                <br>
+
+                                                <h2>&lt;del&gt; TAG - DEFINES DELETED (REMOVED) TEXT</h2>
+                                                <p>
+                                                    <u>ex:</u>
+                                                    <br>
+                                                <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    This text is normal.
+    <br>
+    <del>This text is deleted.</del>
+</body>
+</html>
+                                                    </xmp>
+                                                    <br>
+
+                                                    <u>Display:</u>
+                                                    <br>
+                                                    <!DOCTYPE html>
+                                                    <html>
+
+                                                    <body>
+                                                        This text is normal.
+                                                        <br>
+                                                        <del>This text is deleted.</del>
+                                                    </body>
+
+                                                    </html>
+                                                    <br>
+
+
+                                                    <h2>&ltins&gt TAG - DEFINES INSERTED (ADDED) TEXT</h2>
+                                                    <p>
+                                                        <u>Ex:</u>
+                                                        <br>
+                                                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>My favorite
+        <ins>color</ins> is red.</p>
+</body>
+</html>
+                                                        </xmp>
+                                                        <br>
+
+                                                        <u>Display:</u>
+                                                        <br>
+                                                        <!DOCTYPE html>
+                                                        <html>
+
+                                                        <body>
+                                                            <p>My favorite
+                                                                <ins>color</ins> is red.</p>
+                                                        </body>
+
+                                                        </html>
+                                                        <br>
+
+                                                        <h2>&ltsub&gt AND &ltsup&gt TAG - SUBSCRIPT AND SUPERSCRIPT TEXT</h2>
+                                                        <p>
+                                                            <u>Ex:</u>
+                                                            <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>
+        This is normal text.
+        <br> This is
+        <sub> subscript</sub> and
+        <sup>superscript</sup>
+    </p>
+</body>
+</html>
+                                                            </xmp>
+                                                            <br>
+
+                                                            <u>Display:</u>
+                                                            <p>
+                                                                <!DOCTYPE html>
+                                                                <html>
+
+                                                                <body>
+                                                                    <p>
+                                                                        This text is normal.
+                                                                        <br> This is
+                                                                        <sub> subscript</sub> and
+                                                                        <sup>superscript</sup>.
+
+        </div>
     </article>
 
     <footer>
-        
+
     </footer>
-</body>
-</html>
+    </body>
+
+    </html>
