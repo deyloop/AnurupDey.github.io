@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body{
+
+}
+
+
+.slider-container{
+    width: 100%;
+    padding: 10px 50px;
+    background: blue;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+#slider img{
+    width: 200px;
+    height: 200px;
+    border: solid grey;
+    box-shadow: 0px 0px 9px #00000055;
+}
+
+.content-intro{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.subcategory-header{
+    width: 100%;
+    display: block;
+    background: black;
+    padding-left: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+.catalog-container{
+    width: 100%;
+    padding: 10px 50px;
+}
+.catalog-item{
+    margin-bottom: 30px;
+}
+
+.item-id{
+    background: yellow;
+    width: 100%;
+    text-align: center;
+}
+
+.item-desc{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.item-body{
+    padding:none;
+}
+
+.card{
+    margin: 5px;
+    padding:none;
+    border-radius: 10px;
+}

@@ -1,61 +1,13 @@
-#nav{
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    box-shadow: 0 10px 8px rgba(0,0,0,0.5);
-    background: rgba(0,0,0,0.7);
-    z-index: 99999;
-    overflow: auto;
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-#nav #LOGO{
-    float: left;
-    color: white;
-    font-size: 25px;
-    padding: 5px;
-    margin: 5px;
+.dropdown:hover >.dropdown-menu{
+    display: block;
 }
 
-#nav .home-links{
-    float:left;
-    margin: 20px;
-}
-
-#nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#nav ul li{
-    display:inline;
-}
-
-#nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    background: rgba(22, 21, 21, 0.719);
-    border-radius: 10px;
-    transition: background 0.5s, color 0.5s;
-}
-
-#nav ul li a:hover{
-    background: white;
-    color: black;
-}
-
-#nav .topic-links{
-    text-align: center;
-    float:right;
-    margin-right: 50%;
-    margin: 20px;
-}
-
-#nav ul li a .active-l{
-    color: black;
-    background: #7e7171a4;
+#logo-img{
+    padding-right: 3px;
 }
