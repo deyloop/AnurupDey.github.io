@@ -1,6 +1,7 @@
 $('.responsive').slick({
   speed: 300,
-  slidesToShow: 4,
+  centerMode: true,
+  slidesToShow: 5,
   slidesToScroll: 1,
   arrows: true,
   autoplaySpeed: 1000,

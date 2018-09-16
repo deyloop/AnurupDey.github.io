@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
-
-
 body{
 
 margin: 0px;
@@ -36,8 +34,6 @@ overflow-x: hidden;
 
 #slider{
         padding-left:50px;
-        background-color: blue;
-        
         width: 100%;
         padding-right: 50px;
 }
@@ -197,11 +193,6 @@ overflow-x: hidden;
 
 }
 
-.card{
-
-    
-  
-}
 .Products{
 
     background:  #ece9e6; /* fallback for old browsers */
@@ -257,6 +248,13 @@ box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
     float: left;
     margin-left:2%;
     color:white;
+}
+
+.slider-container{
+    width: 100%;
+    padding: 10px 50px;
+    background: #000066;
+    margin:  0 auto;
 }
 
 @media (max-width:420px){
