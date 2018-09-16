@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+
+body{
+
+margin: 0px;
+padding: 0px;
+overflow-y: scroll;
+overflow-x: hidden;
+
+
+
+}
+#card-sub-text{
+
+    font-size:18px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: -5px ;
+}
+.card-text-1{
+
+    width: 550px ;
+    color: black;
+    text-align: left    ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px ;
+    padding-right: 50px ;
+}
+#logo-img{
+
+    padding-right: 3px;
+
+}
+
+#slider{
+        padding-left:50px;
+        background-color: blue;
+        
+        width: 100%;
+        padding-right: 50px;
+}
+.slider-image{
+
+    margin: 0;
+    padding-left: 28px;
+}
+
+#home-img{
+
+    opacity: 0.7;
+    height: 700px ;
+
+}
+.card-1-1{
+     border: 0 ;
+     background-size: cover ;
+     border-radius: 0 ;
+     float: right ;
+    width: 65% ;
+    text-align: center ;
+     
+}
+#home-text{
+    width: 500px;
+    
+    padding-top: -300px;
+    padding-right:70px;
+}
+.home-head{
+
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.home-content{
+
+    
+    width: 100%;
+    color: black;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+
+
+
+}
+#contact-img{
+    width: 100%;
+    height: 70vh;
+    
+
+
+}
+#contactus-Left{
+  
+    
+    float: left;
+    margin-left: 80px;
+
+}
+
+
+#contactus-left-1{
+    
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    font-size:60px;
+
+
+}
+#contactus-left-2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 270px;
+    margin-top: 40px;
+    padding-left: 5px;
+    font-weight:50px;
+}
+#contact-right{
+
+   width: 400px;
+    margin-right: 40px;
+
+   margin-top: 70px;
+   float: right;
+}
+.main-header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('photos/photo-1484999691661-51b16a51d1d1.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#footer-img{
+    margin-top: 10px;
+    width: 20rem;
+   margin-left: 60px;
+    margin-bottom: 30px;
+}
+.home-content-image{
+   
+    width: 13rem;
+    margin-top: 35px;
+    border-radius: 4px;
+    margin-left: 70px ;
+    margin-bottom: px;
+}
+
+.home-content-image-1{
+
+    margin-top: 15px;
+   
+
+
+}
+.card-1{
+    margin-left: 0 ;
+    float: left ;
+    width: 35% ;
+    border: 0;
+
+}
+
+#home-img-1{
+
+    opacity: 0.7;
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dropdown:hover>.dropdown-menu{
+
+    display: block;
+}
+.product-heading{
+
+    color: black;
+    margin-top: 03%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+
+    
+
+}
+
+.card{
+
+    
+  
+}
+.Products{
+
+    background:  #ece9e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.Products-img{
+
+    
+    width: 200px;
+    height: 250px;
+    align-self: center;
+}
+
+.cut{
+    
+    width: 200px;
+    height: 47px;
+    background-color: black;
+    margin-left: px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 70px;
+    padding-left: 10px;
+    -webkit-box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+-moz-box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+
+
+}
+.cut-1{
+    
+    float: right;
+
+    width: 200px;
+    height: 47px;
+    background-color: black;
+    margin-left: px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 100px;
+    padding-left: 10px;
+    -webkit-box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+    -moz-box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+    box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
+}
+
+.cut-subheading{
+
+    float: left;
+    margin-left:2%;
+    color:white;
+}
+
+@media (max-width:420px){
+
+    #contact-img{
+        widows: 370px;
+
+
+    }
+    #contactus-Left{
+
+        margin-left: 40px;
+    }
+
+
+    #contactus-left-1{
+        font-size: 50px;
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    #contactus-left-2{
+
+        text-align: left;
+
+
+    }
+
+    #contact-right{
+
+        width: 330px;
+        margin-right:20px;
+
+    }  
+
+    
+    #home-text{
+
+        margin-right: 0;
+        text-align: center;
+        width: 300px;
+        
+
+    }
+    .home-content{
+        width: 280px;
+
+    }
+    #home-img{
+        height: 1000px;
+
+    }
+    .home-head{
+
+        font-size: 25px;
+        float: none;
+    }
+
+    .card-text{
+
+        width: 300px;
+        float: none;
+    }
+    .card{
+
+        width: 100%;
+        float: none;
+        margin-left: 10;
+
+    }
+
+    .product-heading{
+
+        font-size: 40px;
+    }
+    #footer-img{
+        margin-left: 0;
+    }
+}
