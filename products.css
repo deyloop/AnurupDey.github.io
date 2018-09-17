@@ -19,7 +19,6 @@
     padding: 0 50px;
 }
 .catalog-item{
-    position: relative;
     height: auto !important;
 }
 
@@ -44,7 +43,6 @@
 }
 
 .item-body{
-    position: relative;
     padding:none;
     height: 100%;
 }
@@ -68,25 +66,34 @@
 }
 
 .cut-2-3 .subcategory{
-    height: 600px;
+    height: 500px;
 }
 
-.cut-2-3 .subcategory .catalog-item {
+.cut-2-3 .subcategory .catalog-item{
     margin: 5px auto;
 }
 
-@media screen and (max-width: 400){
+@media screen and (max-width: 400px){
     .catalog-container{
         padding: none !important;
-        margin : 0 !important;
+        margin : none!important;
+        box-shadow: 0 0 12px #00000077 inset;
     }
 
     .subcategory{
         padding: none !important;
-        margin : 0 !important;
+        margin : none !important;
+        box-shadow: none;
     }
 
     .cut-2-3{
         padding: none !important;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .catalog-container{
+        width:2000px;
+        margin: 0 auto;
     }
 }
