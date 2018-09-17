@@ -38,14 +38,14 @@ overflow-x: hidden;
 }
 
 #slider{
-        padding-left:50px;
+       
         width: 100%;
-        padding-right: 50px;
+       
 }
 .slider-image{
 
     margin: 0;
-    padding-left: 28px;
+    
 }
 
 #home-img{
@@ -287,7 +287,11 @@ box-shadow: 6px 8px 30px 10px rgba(224,224,224,0.91);
 
 
     }
-
+    #slider{
+       
+        width: 100%;
+       
+}
     #contact-right{
 
         width: 330px;
