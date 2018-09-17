@@ -44,6 +44,7 @@
     height: 250px;
     width: 250px;
     align-self: center;
+    border: 2px solid black;
 }
 
 .item-body{
