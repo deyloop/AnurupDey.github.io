@@ -67,3 +67,11 @@
     box-shadow: 0 0 12px #00000077 inset;
     justify-content: lefy;
 }
+
+.cut-2-3{
+    padding: 20px;
+}
+
+.cut-2-3 .subcategory{
+    height: 600px;
+}
