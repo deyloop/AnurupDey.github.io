@@ -75,3 +75,19 @@
 .cut-2-3 .subcategory{
     height: 600px;
 }
+
+@media screen and (max-width: 400){
+    .catalog-container{
+        padding: none !important;
+        margin : 0;
+    }
+
+    .subcategory{
+        padding: none !important;
+        margin : 0;
+    }
+
+    .cut-2-3{
+        padding: none !important;
+    }
+}
