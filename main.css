@@ -4,6 +4,7 @@
 body{
 
 margin: 0px;
+margin-top: 50px;
 padding: 0px;
 overflow-y: scroll;
 overflow-x: hidden;
@@ -222,12 +223,14 @@ overflow-x: hidden;
 
 }
 
-.foot{
+footer{
+    background: #000066;
+    color: white;
+    padding: 5px;
+}
 
-   
-
-
-
+footer a{
+    color: #9de5e2;
 }
 
 
@@ -236,6 +239,14 @@ overflow-x: hidden;
     padding: 10px 50px;
     background: #000066;
     margin:  0 auto;
+}
+
+nav{
+    position: fixed !important;
+    top: 0;
+    left : 0;
+    width: 100%;
+    z-index: 6000;
 }
 
 @media (max-width:420px){
