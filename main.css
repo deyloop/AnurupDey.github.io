@@ -44,8 +44,7 @@ overflow-x: hidden;
        
 }
 .slider-image{
-
-    margin: 0;
+    margin: 0 5px !important;
     
 }
 
@@ -238,7 +237,8 @@ footer a{
     width: 100%;
     padding: 10px 50px;
     background: #000066;
-    margin:  0 auto;
+    margin: 0 0;
+    padding: none;
 }
 
 nav{

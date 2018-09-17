@@ -11,6 +11,7 @@
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .catalog-container{
@@ -58,6 +59,7 @@
 
 .subcategory{
     box-shadow: 0 0 12px #00000077 inset;
+    padding: 10px;
 }
 
 .cut-2-3{
@@ -75,12 +77,12 @@
 @media screen and (max-width: 400){
     .catalog-container{
         padding: none !important;
-        margin : 0;
+        margin : 0 !important;
     }
 
     .subcategory{
         padding: none !important;
-        margin : 0;
+        margin : 0 !important;
     }
 
     .cut-2-3{
