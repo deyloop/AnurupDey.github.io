@@ -10,20 +10,16 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    border-radius: 50px;
-    margin-bottom: 10px;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .catalog-container{
     width: 100%;
-    padding: 0 50px
+    padding: 0 50px;
 }
 .catalog-item{
-    position: relative;
     height: auto !important;
-    padding: 10px;
-    justify-content: center;
 }
 
 .item-id{
@@ -43,14 +39,11 @@
     margin-bottom: 10px;
     height: 250px;
     width: 250px;
-    align-self: center;
     border: 2px solid black;
 }
 
 .item-body{
-    position: relative;
     padding:none;
-
     height: 100%;
 }
 
@@ -59,14 +52,13 @@
     background: none;
     width: 250px;
     height: 100%;
-    margin: 0 auto;
     border: none;
+    margin: 0 auto;
 }
 
 .subcategory{
-    padding: 15px;
     box-shadow: 0 0 12px #00000077 inset;
-    justify-content: lefy;
+    padding: 10px;
 }
 
 .cut-2-3{
@@ -74,21 +66,34 @@
 }
 
 .cut-2-3 .subcategory{
-    height: 600px;
+    height: 500px;
 }
 
-@media screen and (max-width: 400){
+.cut-2-3 .subcategory .catalog-item{
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 400px){
     .catalog-container{
         padding: none !important;
-        margin : 0;
+        margin : none!important;
+        box-shadow: 0 0 12px #00000077 inset;
     }
 
     .subcategory{
         padding: none !important;
-        margin : 0;
+        margin : none !important;
+        box-shadow: none;
     }
 
     .cut-2-3{
         padding: none !important;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .catalog-container{
+        width:2000px;
+        margin: 0 auto;
     }
 }
