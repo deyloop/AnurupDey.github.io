@@ -31,7 +31,8 @@
 
 .item-desc{
     margin: 10px;
-    padding: 10px;
+    padding: 10px 0px;;
+    font-size: 12px;
 }
 
 
@@ -53,12 +54,13 @@
     width: 250px;
     height: 100%;
     border: none;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .subcategory{
     box-shadow: 0 0 12px #00000077 inset;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .cut-2-3{
@@ -89,6 +91,32 @@
     .cut-2-3{
         padding: none !important;
     }
+}
+
+.property{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: 
+        'desc prop prop prop';
+    margin: 5px 0;
+}
+
+.property .descprop{
+    grid-area: desc;
+    font-weight: bold;
+}
+
+.property .desc{    
+    color: #524f4f;
+    grid-area: prop;
+    
+    text-align: right;
+    padding-left: 5px;
+}
+
+.left-align{
+    text-align: right !important;
 }
 
 @media screen and (min-width: 2000px){
