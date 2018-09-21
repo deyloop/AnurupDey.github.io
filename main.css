@@ -4,7 +4,7 @@
 body{
 
 margin: 0px;
-margin-top: 50px;
+margin-top: 59px;
 padding: 0px;
 
 
@@ -249,7 +249,7 @@ nav{
     top: 0;
     left : 0;
     width: 100%;
-    z-index: 6000;
+    z-index: 1;
 }
 .card-text-2{
 

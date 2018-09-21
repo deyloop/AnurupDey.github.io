@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="modal.css">
 
   <title> Knit Safety</title>
 </head>
@@ -98,13 +99,16 @@
 
   <div class="catalog-container">
     <div class="content-intro">
-      <h3>HEAT/CUT-LEATHER GLOVES</h3>
+      <h3>CUT / HEAT RESISTANT GLOVES</h3>
       <p>
-
+          We offer highly technical heat & cut resistant gloves from <strong>cut level 2</strong> to <strong>cut level 5</strong> as per EN norms.
+          These Gloves are made from different yarns like Kevlar®, Twaron®, Dyneema® and other Para Aramide yarns as
+          per buyers
+          specification.
       </p>
     </div>
 
-  <div class="subcategory-header"></div>
+  <div class="subcategory-header">Leather Gloves</div>
   <div class="row subcategory">
     <div class="col-lg-3 col-md-4 col-sm-6 catalog-item">
         <div class="card h-100">
@@ -122,7 +126,7 @@
                         <span class="descprop">SIZE : </span><span class="desc">7-11</span>
                     </div>
                     <div class="property">
-                        <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron ®</span>
+                        <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron®</span>
                     </div>  
                 </div>
             </div>
@@ -147,7 +151,7 @@
                       <span class="descprop">SIZE: </span> <span class="desc"> 7-11</span>
                   </div>
                   <div class="property">
-                      <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron ®</span>
+                      <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron®</span>
                   </div>  
               </div>
           </div>
@@ -173,7 +177,7 @@
                       <span class="descprop">SIZE: </span> <span class="desc"> 7-11</span>
                   </div>
                   <div class="property">
-                      <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron ®</span>
+                      <span class="descprop">YARN : </span><span class="desc">Kevlar® / Twaron®</span>
                   </div>  
               </div>
           </div>
@@ -402,7 +406,18 @@
 
 </div>
 </div>
-</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
 
   
@@ -422,6 +437,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
