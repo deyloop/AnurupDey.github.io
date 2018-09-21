@@ -41,7 +41,7 @@
     margin-bottom: 10px;
     height: 250px;
     width: 250px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .item-body{
@@ -51,14 +51,17 @@
 
 .card{
     padding:none;
-    background: #bbbbbb;
+    background: white;
     width: 250px;
     height: 100%;
     border: none;
+    margin: 0 auto;
 }
 
 .subcategory{
     border-radius: 5px;
+    background: #bbbbbb;
+    border: 2px solid grey;
 }
 
 .cut-2-3{
