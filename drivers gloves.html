@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="modal.css">
+
   <title>Knit Safety</title>
 
 </head>
@@ -363,8 +365,19 @@
 
     </div>
   </div>
-  </div>
-  </div>
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 
  
 
@@ -380,7 +393,7 @@
   <script src="script.js"></script>
   <script src="js/typer.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script src="js/modal.js"></script>
 
 </body>
 
