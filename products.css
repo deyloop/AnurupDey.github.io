@@ -20,6 +20,7 @@
 }
 .catalog-item{
     height: auto !important;
+    padding: 10px;
 }
 
 .item-id{
@@ -50,16 +51,13 @@
 
 .card{
     padding:none;
-    background: none;
+    background: #bbbbbb;
     width: 250px;
     height: 100%;
     border: none;
-    margin: 10px auto;
 }
 
 .subcategory{
-    box-shadow: 0 0 12px #00000077 inset;
-    padding: 10px;
     border-radius: 5px;
 }
 
