@@ -19,8 +19,7 @@
     padding: 0 50px;
 }
 .catalog-item{
-    height: auto !important;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .item-id{
@@ -34,9 +33,7 @@
     margin: 0px 10px;
     padding: none;
     font-size: 12px;
-   
 }
-
 
 .card-img-top {
     margin-bottom: 10px;
