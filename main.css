@@ -242,7 +242,7 @@ nav{
     top: 0;
     left : 0;
     width: 100%;
-    z-index: 6000;
+    z-index: 1;
 }
 .card-text-2{
 
