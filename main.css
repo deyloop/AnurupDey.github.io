@@ -17,6 +17,10 @@ overflow-x: hidden;
     margin-right: 5px;
 
 }
+
+.dropdown .dropdown-toggle{
+    color: black;
+}
 .navbar-brand{
     font-size:22px;
 

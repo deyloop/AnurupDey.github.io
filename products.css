@@ -4,7 +4,7 @@
 
 .subcategory-header{
     width: 100%;
-    display: block;
+
     background: black;  
     color: white;
     font-size: 20px;
@@ -12,11 +12,14 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: none;
+    border-radius: 5px;
 }
 
 .catalog-container{
     width: 100%;
-    padding: 0 50px;
+    padding: 20px;
+    margin: none;
 }
 .catalog-item{
     padding: 20px 10px;
@@ -27,24 +30,31 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
+    border: 2px solid black;
+
 }
 
 .item-desc{
-    margin: 0px 10px;
-    padding: none;
+    display: block;
+    margin: 10px 0 10px 0;
     font-size: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 100%;
+    padding-left: 5px;
 }
 
 .card-img-top {
     margin-bottom: 10px;
     height: 250px;
     width: 250px;
-    /*border: 2px solid black;*/
+    border: 2px solid black;
 }
 
 .item-body{
+    overflow: hidden;
     padding:none;
     height: 100%;
+    border-bottom: 2px solid black;
 }
 
 .card{
@@ -59,6 +69,8 @@
 .subcategory{
     border-radius: 5px;
     background: #F1F1F1;
+
+    margin: 0px;
 }
 
 .cut-2-3{
@@ -73,11 +85,11 @@
     margin: 5px auto;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .catalog-container{
         padding: none !important;
         margin : none!important;
-        box-shadow: 0 0 12px #00000077 inset;
+        background: yellow;
     }
 
     .subcategory{
@@ -89,6 +101,11 @@
 
     .cut-2-3{
         padding: none !important;
+    }
+
+    .catalog-item{
+        padding: none;
+        width: 300px;
     }
 }
 
@@ -113,8 +130,7 @@
     display: block;
     grid-area: prop;
     text-align: left;
-    padding-left: 5px;
-    width: 135px;
+    width: 140px;
 }
 
 .left-align{
