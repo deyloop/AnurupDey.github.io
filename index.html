@@ -1,2 +1,149 @@
-<center><h1>This Site is STILL Under Construction</h1><br>
-<h3>Come back in a few days. There will be something fun</h3></center>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anurup Dey | Home</title>
+        <style>
+            body{
+                background: rgb(15,15,21);
+                color:      rgb(165, 163, 156);
+            }
+
+            canvas{
+                border: 2px white solid;
+                border-radius: 6px;
+            }
+
+            a{
+                color:aqua;
+            }
+
+            b{
+                color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Hello, World!</h1>
+            <p>You have reached Anurup Dey's Website</p>
+            <h2>This Site is STILL Under Construction</h2>
+            <h3>Come back in a few days. There will be something fun</h3>
+            <p>Meanwhile, you can play this game</p>
+            <canvas id="snakeGame" width="300" height="300"></canvas><br>
+            <p>Arrow keys to controll. You know the game</p>
+            <p>Contact <b>Anurup Dey</b> at <a href="mailto:anu.rup.dey98@gmail.com">anu.rup.dey98@gmail.com</a></p>
+        </center>
+        <script>
+            canvas = document.getElementById("snakeGame");
+            ctx = canvas.getContext("2d");
+            setInterval(gameLoop,250);
+            
+            const grid_cell_size = 10;
+            const grid_size = 30;
+
+            snake = [{
+                x: 0,
+                y: 0
+            }];
+            
+            vel = {
+                x: 1,
+                y: 0
+            }
+
+            apple = {
+                x: 0,
+                y: 0
+            }
+
+            function init_a(){
+                apple.x = Math.floor(Math.random()*((grid_size-1)*grid_cell_size));
+                apple.y = Math.floor(Math.random()*((grid_size-1)*grid_cell_size));
+                apple.x = apple.x-apple.x%grid_cell_size;
+                apple.y = apple.y-apple.y%grid_cell_size;
+                console.log(apple)
+            }
+
+            init_a();
+
+            window.addEventListener("keydown", function (event) {
+                if (event.defaultPrevented) {
+                    return; // Do nothing if the event was already processed
+                }
+
+                switch (event.key) {
+                case "ArrowDown":
+                    vel.x = 0;
+                    vel.y = 1;
+                    break;
+                case "ArrowUp":
+                    vel.x = 0;
+                    vel.y = -1;
+                    break;
+                case "ArrowLeft":
+                    vel.x = -1;
+                    vel.y = 0;
+                    break;
+                case "ArrowRight":
+                    vel.x = 1;
+                    vel.y = 0;
+                    break;
+                default:
+                    return; // Quit when this doesn't handle the key event.
+                }
+
+                // Cancel the default action to avoid it being handled twice
+                event.preventDefault();
+            }, true);
+            // the last option dispatches the event to the listener first,
+            // then dispatches event to window
+
+
+            function clear(){
+                ctx.fillStyle = "#0F0F0F"; //rgb(15,15,21);
+                ctx.fillRect(0,0,500,500);
+            }
+            
+            function render(){
+                clear();
+                for(i=0; i<snake.length;i++){
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(snake[i].x,snake[i].y,10,10);
+                }
+
+                ctx.fillStyle = "#00FF00";
+                ctx.fillRect(apple.x,apple.y,10,10);
+            }
+            
+            function update(){
+                newPos = {
+                    x: 0,
+                    y: 0
+                }
+                
+                newPos.x = snake[0].x + vel.x*grid_cell_size;
+                newPos.y = snake[0].y + vel.y*grid_cell_size;
+                
+                if(newPos.x >= grid_cell_size*grid_size) newPos.x = 0;
+                if(newPos.x < 0) newPos.x = (grid_cell_size)*grid_size;
+
+                if(newPos.y >= grid_cell_size*grid_size) newPos.y = 0;
+                if(newPos.y < 0) newPos.y = (grid_cell_size)*grid_size;
+                
+                if((newPos.x == apple.x) && (newPos.y == apple.y)){
+                    snake.unshift(newPos);
+                    init_a();
+                } else {
+                    snake.unshift(newPos);
+                    snake.pop();
+                }
+
+            }
+
+            function gameLoop(){
+                update();
+                render();
+            }
+        </script>    
+    </body>
+</html>
