@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 .my-button:hover {
 	cursor: pointer;
 	padding: .8em 2.7em;
-	background: #85bbdc;
 }
 
 .my-button:active,
